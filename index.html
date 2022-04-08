@@ -5,32 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+   
+
     <title>Document</title>
 </head>
 <body>
+
 <section class="packageMainContainer">
 
-    <label  for="coverage"> What Coverage would you like for the big day?</label>
+    <label  id = "question"></label>
     <article class="inputContainer">
 
-
-        <div  class="inputField ">
+        <input class="inputField " type="date" required>
+        
             
-            <select  name="coverage" id="coverage">
+            <select class="inputField "  name="mediaSelection" id="mediaSelection">
                 <option value="Empty"></option>
-                <option value="Day Package">Bridal Prep - First Dance</option>
-                <option value="Day & Night Package">Bridal Prep - 10pm</option>
+                <option value="photo">Photography</option>
+                <option value="video">Videography</option>
+                <option value="both">Photography & Videography</option>
             </select>
-        </div>
-
-       <input class="inputField " type="text" placeholder=" coverage would you like?">
+        
+            <select  class="inputField "  name="coverage" id="coverage" >
+                <option value="Empty"></option>
+                <option value="day">Bridal Prep - First Dance</option>
+                <option value="dayAndNight">Bridal Prep - 10pm</option>
+            </select>
+    
        <input class="inputField" type="text" placeholder="What is the address of your venue?">
+     
 
        <button id="togBtn">Next</button>
     </article>
 </section>
-    
-    
+
 
     <script src="script.js"></script>
 </body>
