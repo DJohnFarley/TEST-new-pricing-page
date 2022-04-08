@@ -1,14 +1,3 @@
-getAddress.autocomplete("formatted_address_1","KewL6yiVGUC5p4g4bBNQpQ34882");
-
-document.addEventListener("getaddress-address-selected", function(e){
-        const map = document.getElementById('map-frame');
-      
-        map.src = `http://maps.google.com/maps?q=${e.address.latitude},${e.address.longitude}&z=16&output=embed` ;
-        console.log(e.address);
-        console.log(map.src)
-    });
-
-   
 
 
 
