@@ -19,7 +19,7 @@ body{
 }
 
 .inputContainer{
-    border: solid black 4px;
+    /* border: solid black 4px; */
     padding: 10px;
     width: 70%;
     height: 50px;

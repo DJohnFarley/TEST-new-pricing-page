@@ -16,23 +16,24 @@
     <label  id = "question"></label>
     <article class="inputContainer">
 
+        <input id="autocomplete"   class="inputField" type="text" placeholder="What is the address of your venue?">
         <input class="inputField " type="date" required>
         
             
-            <select class="inputField "  name="mediaSelection" id="mediaSelection">
-                <option value="Empty"></option>
+            <select class="inputField "  name="mediaSelection" id="mediaSelection"'>
+                <option value="Empty">Pick a service</option>
                 <option value="photo">Photography</option>
                 <option value="video">Videography</option>
                 <option value="both">Photography & Videography</option>
             </select>
         
             <select  class="inputField "  name="coverage" id="coverage" >
-                <option value="Empty"></option>
+                <option value="Empty">Pick a duration</option>
                 <option value="day">Bridal Prep - First Dance</option>
                 <option value="dayAndNight">Bridal Prep - 10pm</option>
             </select>
     
-       <input class="inputField" type="text" placeholder="What is the address of your venue?">
+      
      
 
        <button id="togBtn">Next</button>
@@ -40,6 +41,16 @@
 </section>
 
 
-    <script src="script.js"></script>
+
+
+<script src="script.js"></script>
+
+    <script 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeFU_L7uNDuhJoB-cqByqaqNzoXc9LdE4&libraries=places&callback=initAutocomplete">
+    </script>
+
+
+
+
 </body>
 </html>
